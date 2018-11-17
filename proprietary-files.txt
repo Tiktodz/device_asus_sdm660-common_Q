@@ -52,6 +52,9 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
+# Amplifier calibration - from X00Q - 15.0619.1810.73
+vendor/bin/SpeakerCalibrationTest|db92fe9a33f3924883b0aea42967fad714d8115f
+
 # ANT+
 -lib/libantradio.so
 product/lib64/com.qualcomm.qti.ant@1.0.so
