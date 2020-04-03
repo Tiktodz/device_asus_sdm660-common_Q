@@ -350,4 +350,35 @@
          Used to decide if we show pulse settings -->
     <bool name="config_ledCanPulse">true</bool>
 
+    <!-- The list of components which should be automatically disabled for a specific device. -->
+    <string-array name="config_deviceDisabledComponents" translatable="false">
+        <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
+        <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
+    </string-array>
+
+    <!-- QS System Info -->
+    <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone5/temp</string>
+    <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
+    <string name="config_sysGPUFreq">/sys/kernel/gpu/gpu_clock</string>
+    <string name="config_sysGPULoad">/sys/kernel/gpu/gpu_busy</string>
+    <integer name="config_sysCPUTempMultiplier">100</integer>
+    <integer name="config_sysBatteryTempMultiplier">10</integer>
+
+    <!-- Flag indicating whether we should enable the adaptive sleep.-->
+    <bool name="config_adaptive_sleep_available">true</bool>
+
+    <!-- Amount of time in ms the user needs to press the relevant keys to trigger the
+         screenshot chord -->
+   <integer name="config_screenshotChordKeyTimeout">0</integer>
+
+    <!-- Paths to the libraries that contain device specific key handlers -->
+        <string-array name="config_deviceKeyHandlerLibs" translatable="false">
+        <item>/system/priv-app/ZenParts/ZenParts.apk</item>
+    </string-array>
+
+    <!-- Names of the key handler classes -->
+    <string-array name="config_deviceKeyHandlerClasses" translatable="false">
+        <item>com.asus.zenparts.TouchKeyHandler</item>
+    </string-array>
+
 </resources>
