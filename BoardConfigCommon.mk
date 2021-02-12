@@ -168,6 +168,10 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # Sepolicy
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
+
+SELINUX_IGNORE_NEVERALLOWS := true
 
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
