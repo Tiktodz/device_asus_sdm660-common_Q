@@ -88,3 +88,6 @@ sys.usb.config=diag,adb
 ro.adb.secure=0
 ro.secure=0
 ro.debuggable=1
+
+# Priv-app permissions
+ro.control_privapp_permissions=log
