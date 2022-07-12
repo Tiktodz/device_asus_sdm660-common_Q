@@ -82,12 +82,5 @@ persist.timed.enable=true
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
 
-# ADB
-persist.sys.usb.config=diag,adb
-sys.usb.config=diag,adb
-ro.adb.secure=0
-ro.secure=0
-ro.debuggable=1
-
 # Priv-app permissions
 ro.control_privapp_permissions=log
